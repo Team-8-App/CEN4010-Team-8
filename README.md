@@ -5,9 +5,7 @@ Team Project CEN 4010
 You will be creating an API Service to support an online web application bookstore that targets a particular niche in
 technology. The application, named Geek Text will need to support the following features:
 Note: Each API Action is its own separate API route.
-The REST API service must have the following components:
-•
-•
+The REST API service must have the following components:•
 RESTful API: An API service that is exposed to the front using HTTPS exposing functional endpoints.
 Backend Database: A Database of your choice to store the data which can only be accessed by the API.
 The grading will be split into team components and group components. Each feature will be owned by a team member.
