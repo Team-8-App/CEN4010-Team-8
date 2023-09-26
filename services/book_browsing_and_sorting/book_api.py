@@ -7,7 +7,7 @@ app = Flask(__name__)
 db_config = {
     'host': 'ls-b2f10f0f8d1f46949bc16b2a5608934e887eb6b0.c1zf3hrzxwhy.us-east-2.rds.amazonaws.com',
     'user': 'team_8',
-    'password': 'Ankit-Bonnie-082821!',
+    'password': 'PASSWORD',
     'database': 'team_8'
 }
 
