@@ -11,6 +11,7 @@ db_config = {
     'database': 'team_8'
 }
 
+
 @app.route('/books', methods=['GET'])
 def get_books():
     genre_filter = request.args.get('genre')
@@ -50,3 +51,4 @@ def get_books():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
