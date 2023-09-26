@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 # Database configuration
 db_config = {
-    'host': 'HOST',
+    'host': 'HOST_8',
     'user': 'team_8',
-    'password': 'PASSWORD',
+    'password': 'PASSWORD_8',
     'database': 'team_8'
 }
 
