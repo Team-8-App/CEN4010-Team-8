@@ -1,11 +1,12 @@
-Users will have a simple and enjoyable way to discover new books and
-Authors and sort results.
+Users will have a simple and enjoyable way to discover new books and authors and sort results.
+
+The book_api.py provides the RESTful GET endpoint for the book browsing and sorting feature.
 
 **REST API Actions:**
 
 - **Retrieve List of Books by Genre**
 
-  - Logic: Given a specific genre, return a list of books for that genre.o
+  - Logic: Given a specific genre, return a list of books for that genre.
   - HTTP Request Type: GET
   - Parameters Sent: Genre
   - Response Data: JSON List of book objects
@@ -20,7 +21,7 @@ Authors and sort results.
 
 - **Retrieve List of Books for a particular rating and higher**
 
-  - Logic: Filter by rating higher or equal to the passed rating value.o
+  - Logic: Filter by rating higher or equal to the passed rating value.
   - HTTP Request Type: GET
   - Parameters Sent: Rating
   - Response Data: JSON List of book objects
@@ -30,3 +31,5 @@ Authors and sort results.
   - HTTP Request Type: PUT or PATCH
   - Parameters Sent: Discount percent, Publisher
   - Response Data: None
+
+
