@@ -9,7 +9,7 @@ Users can see informative and enticing details about a book
   - Parameters Sent: Book Object
   - Response Data: None
 
-- Must be able retrieve a book’s details by the ISBN
+- Must be able retrieve a book’s details by the ISBN :check:
 
   - Logic: Given a book id, retrieve the book informationo
   - HTTP Request Type: GET
@@ -23,7 +23,7 @@ Users can see informative and enticing details about a book
   - Parameters Sent: Author Object
   - Response Data: None
 
-- Must be able to retrieve a list of books associated with an author
+- Must be able to retrieve a list of books associated with an author :check:
   - Logic: Given an Author’s Id, return the list of books for that author.o
   - HTTP Request Type: GET
   - Parameters Sent: Author Id
