@@ -30,8 +30,6 @@ class TestApp(TestCase):
         data = json.loads(response.get_data(as_text=True))
         self.assertEqual(data["message"], "Rating created successfully")
 
-    # More test methods...
-
 
 # This allows us to run our tests using the typical `python -m unittest discover` command
 if __name__ == '__main__':
