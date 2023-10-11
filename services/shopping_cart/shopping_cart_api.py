@@ -5,14 +5,16 @@ app = Flask(__name__)
 
 # Database configuration
 db_config = {
-    'host': 'ls-b2f10f0f8d1f46949bc16b2a5608934e887eb6b0.c1zf3hrzxwhy.us-east-2.rds.amazonaws.com',
+    'host': 'HOST_8',
     'user': 'team_8',
-    'password': 'Ankit-Bonnie-082821!',
+    'password': 'PASSWORD_8',
     'database': 'team_8'
 }
 
 @app.route('/shopping-cart', methods=['GET'])
-def get_user_profile():    
+def get_user_profile():
+    conn = None
+    cursor = None
     user_id = request.args.get('user_id')
 
     try:
@@ -46,13 +48,13 @@ def get_user_profile():
         else:
             return jsonify({'error': 'Cart is empty'})
 
-
     except mysql.connector.Error as err:
         return jsonify({'error': 'Database error', 'message': str(err)})
 
     finally:
-        if conn.is_connected():
+        if cursor:
             cursor.close()
+        if conn and conn.is_connected():
             conn.close()
 
 
