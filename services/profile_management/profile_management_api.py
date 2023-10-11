@@ -12,9 +12,11 @@ db_config = {
 }
 
 @app.route('/user-profile', methods=['GET'])
-def get_user_profile():    
+def get_user_profile():
+    conn = None
+    cursor = None
     username_filter = request.args.get('username')
-    sort_by = request.args.get('sort_by', 'username') 
+    sort_by = request.args.get('sort_by', 'username')
 
     # Check if the sort_by value is valid to prevent SQL injection
     valid_sort_columns = ["username", "user_id"]
@@ -43,11 +45,13 @@ def get_user_profile():
         return jsonify({'error': 'Database error', 'message': str(err)})
 
     finally:
-        if conn.is_connected():
+        if cursor:
             cursor.close()
+        if conn and conn.is_connected():
             conn.close()
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
