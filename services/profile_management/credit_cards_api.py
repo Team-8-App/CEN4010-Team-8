@@ -11,12 +11,6 @@ db_config = {
     'database': 'team_8'
 }
 
-
-@app.route('/user-profile', methods=['GET'])
-def get_user_profile():
-    pass  # TODO: Implement the logic
-
-
 @app.route('/credit-card', methods=['GET', 'POST'])
 def credit_card():
     conn = None
