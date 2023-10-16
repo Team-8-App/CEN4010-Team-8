@@ -1,0 +1,280 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0b22cdea-a22e-48cd-a344-658e6a9c35ea\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/services/book_rating_and_commenting/rating_api.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/tests/unit/test_details.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/services/book_rating_and_commenting/get RESTapi\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/services/book_rating_and_commenting/get RESTapi\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"elle-concetta-patch-12\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2VYAHL0XoMvPrzBEZN3jXDvLqEn\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;\r\n    ],\r\n    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [\r\n      &quot;Python&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Jayle\\OneDrive\\Documents\\GitHub\\CEN4010-Team-8\\services\\book_rating_and_commenting\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.profile_management_api\">\r\n    <configuration name=\"book_api\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CEN4010-Team-8\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/services/book_browsing_and_sorting\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/services/book_browsing_and_sorting/book_api.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"profile_management_api\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CEN4010-Team-8\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/services/profile_management\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/services/profile_management/profile_management_api.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"ratingapi (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CEN4010-Team-8\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/services/book_rating_and_commenting\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/services/book_rating_and_commenting/ratingapi.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"ratingapi\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CEN4010-Team-8\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$APPLICATION_CONFIG_DIR$/scratches\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"C:\\Users\\Jayle\\OneDrive\\Documents\\GitHub\\CEN4010-Team-8\\services\\book_rating_and_commenting\\ratingapi.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"wishlist_api\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CEN4010-Team-8\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/services/wish_list_and_management\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/services/wish_list_and_management/wishlist_api.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.profile_management_api\" />\r\n        <item itemvalue=\"Python.wishlist_api\" />\r\n        <item itemvalue=\"Python.book_api\" />\r\n        <item itemvalue=\"Python.ratingapi (1)\" />\r\n        <item itemvalue=\"Python.ratingapi\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0b22cdea-a22e-48cd-a344-658e6a9c35ea\" name=\"Changes\" comment=\"\" />\r\n      <created>1695002552112</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1695002552112</updated>\r\n      <workItem from=\"1695002554845\" duration=\"2695000\" />\r\n      <workItem from=\"1695349660748\" duration=\"664000\" />\r\n      <workItem from=\"1695700068542\" duration=\"2810000\" />\r\n      <workItem from=\"1695746775987\" duration=\"4085000\" />\r\n      <workItem from=\"1695765285444\" duration=\"2887000\" />\r\n      <workItem from=\"1696201821866\" duration=\"4062000\" />\r\n      <workItem from=\"1696887253276\" duration=\"3219000\" />\r\n      <workItem from=\"1696978870290\" duration=\"1394000\" />\r\n      <workItem from=\"1697055281837\" duration=\"109000\" />\r\n      <workItem from=\"1697055430606\" duration=\"2270000\" />\r\n      <workItem from=\"1697138540333\" duration=\"823000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/Book-Rating\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/CEN4010_Team_8$wishlist_api.coverage\" NAME=\"wishlist_api Coverage Results\" MODIFIED=\"1696204135492\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/services/wish_list_and_management\" />\r\n    <SUITE FILE_PATH=\"coverage/CEN4010_Team_8$ratingapi__1_.coverage\" NAME=\"ratingapi (1) Coverage Results\" MODIFIED=\"1696203358672\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/services/book_rating_and_commenting\" />\r\n    <SUITE FILE_PATH=\"coverage/CEN4010_Team_8$ratingapi.coverage\" NAME=\"ratingapi Coverage Results\" MODIFIED=\"1695747251103\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$APPLICATION_CONFIG_DIR$/scratches\" />\r\n    <SUITE FILE_PATH=\"coverage/CEN4010_Team_8$profile_management_api.coverage\" NAME=\"profile_management_api Coverage Results\" MODIFIED=\"1696205977650\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/services/profile_management\" />\r\n    <SUITE FILE_PATH=\"coverage/CEN4010_Team_8$book_api.coverage\" NAME=\"book_api Coverage Results\" MODIFIED=\"1696204001685\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/services/book_browsing_and_sorting\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0ca5269eaf24540a94c055b6406ab37e947964c2)
++++ b/.idea/workspace.xml	(date 1697422113634)
+@@ -4,254 +4,44 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0b22cdea-a22e-48cd-a344-658e6a9c35ea" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/services/book_rating_and_commenting/rating_api.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/tests/unit/test_details.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/services/book_rating_and_commenting/get RESTapi" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_rating_and_commenting/get RESTapi" afterDir="false" />
++    <list default="true" id="2cf2c3aa-557b-45f4-8f20-9146aa2c6dae" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Python Script" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+-    <envs>
+-      <env key="FLASK_APP" value="app" />
+-    </envs>
+-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+-    <option name="myEnvs">
+-      <map>
+-        <entry key="FLASK_APP" value="app" />
+-      </map>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="elle-concetta-patch-12" />
+-      </map>
+-    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 1
++  &quot;associatedIndex&quot;: 3
+ }</component>
+-  <component name="ProjectId" id="2VYAHL0XoMvPrzBEZN3jXDvLqEn" />
++  <component name="ProjectId" id="2WpAUbGSfU8xBqXwZW8p6woonET" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-  },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;mysql&quot;
+-    ],
+-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+-      &quot;Python&quot;
+-    ]
+-  }
+-}</component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\Jayle\OneDrive\Documents\GitHub\CEN4010-Team-8\services\book_rating_and_commenting" />
+-    </key>
+-  </component>
+-  <component name="RunManager" selected="Python.profile_management_api">
+-    <configuration name="book_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="CEN4010-Team-8" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services/book_browsing_and_sorting" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/book_browsing_and_sorting/book_api.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="profile_management_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="CEN4010-Team-8" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services/profile_management" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/profile_management/profile_management_api.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="ratingapi (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="CEN4010-Team-8" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services/book_rating_and_commenting" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/book_rating_and_commenting/ratingapi.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="ratingapi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="CEN4010-Team-8" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+-      <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="C:\Users\Jayle\OneDrive\Documents\GitHub\CEN4010-Team-8\services\book_rating_and_commenting\ratingapi.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="wishlist_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="CEN4010-Team-8" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services/wish_list_and_management" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/wish_list_and_management/wishlist_api.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="Python.profile_management_api" />
+-        <item itemvalue="Python.wishlist_api" />
+-        <item itemvalue="Python.book_api" />
+-        <item itemvalue="Python.ratingapi (1)" />
+-        <item itemvalue="Python.ratingapi" />
+-      </list>
+-    </recent_temporary>
+-  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "main"
++  }
++}]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="0b22cdea-a22e-48cd-a344-658e6a9c35ea" name="Changes" comment="" />
+-      <created>1695002552112</created>
++      <changelist id="2cf2c3aa-557b-45f4-8f20-9146aa2c6dae" name="Changes" comment="" />
++      <created>1697419165758</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+-      <updated>1695002552112</updated>
+-      <workItem from="1695002554845" duration="2695000" />
+-      <workItem from="1695349660748" duration="664000" />
+-      <workItem from="1695700068542" duration="2810000" />
+-      <workItem from="1695746775987" duration="4085000" />
+-      <workItem from="1695765285444" duration="2887000" />
+-      <workItem from="1696201821866" duration="4062000" />
+-      <workItem from="1696887253276" duration="3219000" />
+-      <workItem from="1696978870290" duration="1394000" />
+-      <workItem from="1697055281837" duration="109000" />
+-      <workItem from="1697055430606" duration="2270000" />
+-      <workItem from="1697138540333" duration="823000" />
++      <updated>1697419165758</updated>
+     </task>
+     <servers />
+   </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State>
+-              <option name="FILTERS">
+-                <map>
+-                  <entry key="branch">
+-                    <value>
+-                      <list>
+-                        <option value="origin/Book-Rating" />
+-                      </list>
+-                    </value>
+-                  </entry>
+-                </map>
+-              </option>
+-            </State>
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/CEN4010_Team_8$wishlist_api.coverage" NAME="wishlist_api Coverage Results" MODIFIED="1696204135492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/wish_list_and_management" />
+-    <SUITE FILE_PATH="coverage/CEN4010_Team_8$ratingapi__1_.coverage" NAME="ratingapi (1) Coverage Results" MODIFIED="1696203358672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/book_rating_and_commenting" />
+-    <SUITE FILE_PATH="coverage/CEN4010_Team_8$ratingapi.coverage" NAME="ratingapi Coverage Results" MODIFIED="1695747251103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+-    <SUITE FILE_PATH="coverage/CEN4010_Team_8$profile_management_api.coverage" NAME="profile_management_api Coverage Results" MODIFIED="1696205977650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/profile_management" />
+-    <SUITE FILE_PATH="coverage/CEN4010_Team_8$book_api.coverage" NAME="book_api Coverage Results" MODIFIED="1696204001685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/book_browsing_and_sorting" />
+-  </component>
+ </project>
+\ No newline at end of file
