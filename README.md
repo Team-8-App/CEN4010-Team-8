@@ -33,7 +33,7 @@ curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
 ```
 - Pulled Amplify project with terminal command: 
 ```console
-amplify pull --appId ########## --envName staging
+amplify pull --appId <app id> --envName staging
 ```
 - Added rest capabilities and can create backend api with terminal command: 
 ```console
