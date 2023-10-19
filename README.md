@@ -17,18 +17,41 @@ implementation portion of the grade.
 # GitHub Integrations
 AWS Connector for Github and AWS Amplify
 
-# LANGUAGES AND FRAMEWORKS
-- Languages: Python,
+# Languages and Frameworks
+- Languages: Python, Javascript
 - Database: MySQL
 - Frameworks: Flask and Django 
 - Other Apps: AWS Amplify, AWS Cognito, AWS Lambda, and Amazon API Gateway
 
 # Installations and Setup
-Open terminal and type in the command: ''' pip3 install aws-shell '''
+Open terminal and type in the command:
+```console
+pip3 install aws-shell
+```
+```console
+aws configure
+```
+It will then ask for the AWS Access Key, and the AWS Secret Access Key.
 
-Install Amplify CLI with terminal command: curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
+Then connected the AWSConnector to the Github Repository.
 
-Pull Amplify project with terminal command: amplify pull --appId d216u75kun0kr2 --envName staging
+Install Amplify CLI with terminal command: 
+```console
+curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
+```
+Pull Amplify project with terminal command: 
+```console
+amplify pull --appId ########## --envName staging
+```
+Add rest capabilities with terminal command: 
+```console
+amplify add api
+```
+- Chose REST and labeled the category "api".
+- Provide a path: /items
+- Provide an AWS Lambda function name: apilambda
+- Choose the runtime: Python
 
-Add rest capabilities with terminal command: amplify add api
+
+
 
