@@ -6,13 +6,13 @@ Each API Action has its own separate API route. The REST API service has followi
 - Backend Database: A Database of your choice to store the data which can only be accessed by the API.
 
 # GitHub Integrations
-AWS Connector for Github and AWS Amplify
+AWS Connector for Github
 
 # Languages and Frameworks
 - Languages: Python, Javascript
 - Database: MySQL
 - Frameworks: Flask and Django 
-- Other Apps: AWS Amplify, AWS Cognito, AWS Lambda, and Amazon API Gateway
+- Other Apps: AWS Lightsail and AWS Lambda
 
 # Installations and Setup
 Open terminal and type in the command:
@@ -25,56 +25,6 @@ aws configure
 It will then ask for the AWS Access Key, and the AWS Secret Access Key.
 
 Then connected the AWSConnector to the Github Repository.
-
-The following information is found in Amplify Studio under REST API:
-- Install Amplify CLI with terminal command: 
-```console
-curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
-```
-- Pulled Amplify project with terminal command: 
-```console
-amplify pull --appId <app id> --envName staging
-```
-- Added rest capabilities and can create backend api with terminal command: 
-```console
-amplify add api
-```
-After this command, it will give you some of the following options while setting up your backend environment:
-- Chose REST and labeled the category "api".
-- Provide a path: /items
-- Provide an AWS Lambda function name: apilambda
-- Choose the runtime: Python
-
-Name and create environment with awscloudformation using the following terminal command:
-```console
-amplify init
-```
-Then create user pool for application:
-```console
-amplify add auth
-```
-user pool: cen4010team8cc519681
-
-BELOW ARE OTHER IMPORTANT COMMANDS:
-- Shows what you've already added and deployed:
-```console
-amplify status
-```
-- Allows you to add features like user login and backend API:
-```console
-amplify add <category>
-```
-- Builds all local backend resources and provisions it in the cloud:
-```console
-amplify push
-```
-```console
-amplify publish
-```
-- Open Amplify Console and view project status:
-```console
-amplify console
-```
 
 
 
