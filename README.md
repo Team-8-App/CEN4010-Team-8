@@ -24,7 +24,7 @@ AWS Connector for Github and AWS Amplify
 - Other Apps: AWS Amplify, AWS Cognito, AWS Lambda, and Amazon API Gateway
 
 # Installations and Setup
-Open terminal and type in the command: pip3 install aws-shell
+Open terminal and type in the command: ''' pip3 install aws-shell '''
 
 Install Amplify CLI with terminal command: curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
 
