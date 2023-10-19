@@ -31,11 +31,11 @@ The following information is found in Amplify Studio under REST API:
 ```console
 curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
 ```
-- Pull Amplify project with terminal command: 
+- Pulled Amplify project with terminal command: 
 ```console
 amplify pull --appId ########## --envName staging
 ```
-- Add rest capabilities with terminal command: 
+- Added rest capabilities and can create backend api with terminal command: 
 ```console
 amplify add api
 ```
@@ -44,6 +44,32 @@ After this command, it will give you some of the following options while setting
 - Provide a path: /items
 - Provide an AWS Lambda function name: apilambda
 - Choose the runtime: Python
+
+Name and create environment with awscloudformation using the following terminal command:
+```console
+amplify init
+```
+
+Below are other important commands:
+- Shows what you've already added and deployed
+```console
+amplify status
+```
+- Allows you to add features like user login and backend API
+```console
+amplify add <category>
+```
+- Builds all local backend resources and provisions it in the cloud
+```console
+amplify push
+```
+```console
+amplify publish
+```
+- Open Amplify Console and view project status
+```console
+amplify console
+```
 
 
 
