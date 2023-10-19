@@ -49,6 +49,10 @@ Name and create environment with awscloudformation using the following terminal 
 ```console
 amplify init
 ```
+Then create user pool for application:
+```console
+amplify add auth
+```
 
 BELOW ARE OTHER IMPORTANT COMMANDS:
 - Shows what you've already added and deployed:
