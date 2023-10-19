@@ -15,16 +15,6 @@ AWS Connector for Github
 - Other Apps: AWS Lightsail and AWS Lambda
 
 # Installations and Setup
-Open terminal and type in the command:
-```console
-pip3 install aws-shell
-```
-```console
-aws configure
-```
-It will then ask for the AWS Access Key, and the AWS Secret Access Key.
-
-Then connected the AWSConnector to the Github Repository.
 
 
 
