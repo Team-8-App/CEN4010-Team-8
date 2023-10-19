@@ -53,6 +53,7 @@ Then create user pool for application:
 ```console
 amplify add auth
 ```
+user pool: cen4010team8cc519681
 
 BELOW ARE OTHER IMPORTANT COMMANDS:
 - Shows what you've already added and deployed:
