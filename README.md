@@ -50,23 +50,23 @@ Name and create environment with awscloudformation using the following terminal 
 amplify init
 ```
 
-Below are other important commands:
-- Shows what you've already added and deployed
+BELOW ARE OTHER IMPORTANT COMMANDS:
+- Shows what you've already added and deployed:
 ```console
 amplify status
 ```
-- Allows you to add features like user login and backend API
+- Allows you to add features like user login and backend API:
 ```console
 amplify add <category>
 ```
-- Builds all local backend resources and provisions it in the cloud
+- Builds all local backend resources and provisions it in the cloud:
 ```console
 amplify push
 ```
 ```console
 amplify publish
 ```
-- Open Amplify Console and view project status
+- Open Amplify Console and view project status:
 ```console
 amplify console
 ```
