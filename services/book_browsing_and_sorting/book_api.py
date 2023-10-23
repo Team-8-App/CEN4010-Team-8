@@ -11,6 +11,10 @@ db_config = {
     'database': 'team_8'
 }
 
+headers = {
+    'Content-Type': 'application/json'
+}
+
 # GET endpoint to retrieve books
 @app.route('/books', methods=['GET'])
 def get_books():
