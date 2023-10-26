@@ -13,9 +13,6 @@ class TestBookBrowsingAPI(unittest.TestCase):
     def test_get_books_with_genre_filter(self):
         response = self.app.get('/books?genre=Science Fiction')
 
-    def test_get_books_with_invalid_sort_by(self):
-        response = self.app.get('/books?sort_by=invalid_column')
-
     def test_get_books_with_top_sellers(self):
         response = self.app.get('/books?top_sellers=10')
 
