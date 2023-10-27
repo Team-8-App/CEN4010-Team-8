@@ -11,134 +11,87 @@ db_config = {
     'database': 'team_8'
 }
 
-@app.route('/book_detail', methods=['GET'])
-def get_user_profile():
+
+@app.route('/book_detail', methods=['GET', 'POST'])
+def get_book_details():
     conn = None
     cursor = None
-    isbn_filter = request.args.get('isbn')
-    author_filter = request.args.get('author_id')
 
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor(dictionary=True)
+    if request.method == 'GET':
+        isbn_filter = request.args.get('isbn')
+        sort_by = request.args.get('sort_by', 'isbn')
+        author_filter = request.args.get('author_id')
 
-        query = "SELECT * FROM BookDetails"
-        query_args = []
+        valid_sort_columns = ["isbn", "author_id"]
 
-        if isbn_filter:
-            query += " WHERE isbn=%s"
-            query_args.append(isbn_filter)
+        if sort_by not in valid_sort_columns:
+            return jsonify({'error': 'Invalid sort column'})
 
-        elif author_filter:
-            query += " WHERE author_id=%s"
-            query_args.append(author_filter)
+        try:
+            conn = mysql.connector.connect(**db_config)
+            cursor = conn.cursor(dictionary=True)
 
-        cursor.execute(query, query_args)
-        user_profile = cursor.fetchall()
+            query = "SELECT * FROM BookDetails"
+            query_args = []
 
-        return jsonify(user_profile)
+            if isbn_filter:
+                query += " WHERE isbn=%s"
+                query_args.append(isbn_filter)
 
-    except mysql.connector.Error as err:
-        return jsonify({'error': 'Database error', 'message': str(err)})
+            if author_filter:
+                query += " WHERE author_id=%s"
+                query_args.append(author_filter)
 
-    finally:
-        if cursor:
-            cursor.close()
-        if conn and conn.is_connected():
-            conn.close()
+            query += f" ORDER BY {sort_by}"
 
+            cursor.execute(query, query_args)
+            book_details = cursor.fetchall()
 
-@app.route('/books', methods=['POST'])
-def create_book():
-    conn = None
-    cursor = None
-    data = request.get_json()
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
+            return jsonify(book_details)
 
-        insert_query = """INSERT INTO BookDetails(isbn, book_name, description, price, author_id, genre, publisher, year_published, copies_sold)
-                          VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
-        cursor.execute(insert_query,
-                       (data['isbn'], data['book_name'], data['description'], data['price'], data['author_id'],
-                        data['genre'], data['publisher'], data['year_published'], data['copies_sold']))
-        conn.commit()
-        return jsonify({'status': 'Book created'}), 201
+        except mysql.connector.Error as err:
+            return jsonify({'error': 'Database error', 'message': str(err)})
 
-    except mysql.connector.Error as err:
-        return jsonify({'error': 'Database error', 'message': str(err)})
+        finally:
+            if cursor:
+                cursor.close()
+            if conn and conn.is_connected():
+                conn.close()
 
-    finally:
-        if cursor:
-            cursor.close()
-        if conn and conn.is_connected():
-            conn.close()
+    elif request.method == 'POST':
+        conn = None
+        cursor = None
 
+        try:
+            user_data = request.json
 
-@app.route('/authors/<int:author_id>/books', methods=['GET'])
-def get_books_by_author(author_id):
-    conn = None
-    cursor = None
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor(dictionary=True)
+            isbn = user_data.get('isbn', None)
+            book_name = user_data.get('book_name', None)
+            description = user_data.get('description', None)
+            price = user_data.get('price', None)
+            author_id = user_data.get('author_id', None)
+            genre = user_data.get('genre', None)
+            publisher = user_data.get('publisher', None)
+            year_published = user_data.get('year_published', None)
+            copies_sold = user_data.get('copies_sold', None)
 
-        select_query = "SELECT * FROM BookDetails WHERE author_id = %s"
-        cursor.execute(select_query, (author_id,))
-        books = cursor.fetchall()
+            conn = mysql.connector.connect(**db_config)
+            cursor = conn.cursor()
 
-        return jsonify(books), 200
+            query = "INSERT INTO BookDetails (isbn, book_name, description, price, author_id, genre, publisher, year_published, copies_sold) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            cursor.execute(query, (isbn, book_name, description, price, author_id, genre, publisher, year_published, copies_sold))
 
-    except mysql.connector.Error as err:
-        return jsonify({'error': 'Database error', 'message': str(err)})
+            conn.commit()
+            return jsonify({'message': 'User created successfully'})
 
-    finally:
-        if cursor:
-            cursor.close()
-        if conn and conn.is_connected():
-            conn.close()
+        except mysql.connector.Error as err:
+            return jsonify({'error': 'Database error', 'message': str(err)})
 
-@app.route('/books', methods=['POST'])
-def create_book():
-    data = request.get_json()
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
-
-        insert_query = """INSERT INTO BookDetails(isbn, book_name, description, price, author_id, genre, publisher, year_published, copies_sold)
-                          VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
-        cursor.execute(insert_query, (data['isbn'], data['book_name'], data['description'], data['price'], data['author_id'],
-                                      data['genre'], data['publisher'], data['year_published'], data['copies_sold']))
-        conn.commit()
-        return jsonify({'status': 'Book created'}), 201
-
-    except mysql.connector.Error as err:
-        return jsonify({'error': 'Database error', 'message': str(err)})
-
-    finally:
-        if conn.is_connected():
-            cursor.close()
-            conn.close()
-
-@app.route('/authors/<int:author_id>/books', methods=['GET'])
-def get_books_by_author(author_id):
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor(dictionary=True)
-
-        select_query = "SELECT * FROM BookDetails WHERE author_id = %s"
-        cursor.execute(select_query, (author_id,))
-        books = cursor.fetchall()
-
-        return jsonify(books), 200
-
-    except mysql.connector.Error as err:
-        return jsonify({'error': 'Database error', 'message': str(err)})
-
-    finally:
-        if conn.is_connected():
-            cursor.close()
-            conn.close()
+        finally:
+            if cursor:
+                cursor.close()
+            if conn and conn.is_connected():
+                conn.close()
 
 if __name__ == '__main__':
     app.run(debug=True)
