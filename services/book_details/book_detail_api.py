@@ -93,5 +93,63 @@ def get_book_details():
             if conn and conn.is_connected():
                 conn.close()
 
+@app.route('/book_detail/<int:author_id>', methods=['PUT', 'PATCH'])
+def update_book_detail(author_id):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+
+    try:
+        user_data = request.json
+
+        cursor.execute("SELECT * FROM BookDetails WHERE author_id = %s", (author_id))
+        existing_author = cursor.fetchone()
+        if not existing_author:
+            return jsonify({'error': f'Author with ID {author_id} not found'})
+
+        updated_fields = {}
+        for field in ['isbn', 'description', 'price', 'genre', 'publisher', 'year_published', 'copiSes_sold']:
+            if field in user_data and field != 'book_name':
+                updated_fields[field] = user_data[field]
+
+            if not updated_fields:
+                return jsonify({'error': 'No valid fields to update provided'})
+
+        set_clause = ', '.join([f"{field}=%s" for field in updated_fields])
+        query = f"UPDATE BookDetails SET {set_clause} WHERE author_id = %s"
+        cursor.execute(query, tuple(updated_fields.values()) + (author_id))
+
+        conn.commit()
+        return jsonify({'message': f'Author with ID {author_id} updated successfully'})
+
+    except mysql.connector.Error as err:
+        return jsonify({'error': 'Database error', 'message': str(err)})
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn and conn.is_connected():
+            conn.close()
+
+@app.route('/book_detail/<int:author_id>', methods=['DELETE'])
+def delete_profile(author_id):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("SELECT * FROM BookDetails WHERE author_id = %s", (author_id))
+
+        conn.commit()
+        return jsonify({'message': f'Author with ID {author_id} deleted successfully'})
+
+    except mysql.connector.Error as err:
+        return jsonify({'error': 'Database error', 'message': str(err)})
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn and conn.is_connected():
+            conn.close()
+
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -98,6 +98,63 @@ def get_books():
             if conn and conn.is_connected():
                 conn.close()
 
+@app.route('/books/<int:book_id>', methods=['PUT', 'PATCH'])
+def update_books(book_id):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+
+    try:
+        user_data = request.json
+
+        cursor.execute("SELECT * FROM Books WHERE books_id = %s", (book_id))
+        existing_book = cursor.fetchone()
+        if not existing_book:
+            return jsonify({'error': f'Book with ID {book_id} not found'})
+
+        updated_fields = {}
+        for field in ['genre', 'copies_sold', 'publisher', 'discount']:
+            if field in user_data and field != 'title':
+                updated_fields[field] = user_data[field]
+
+            if not updated_fields:
+                return jsonify({'error': 'No valid fields to update provided'})
+
+        set_clause = ', '.join([f"{field}=%s" for field in updated_fields])
+        query = f"UPDATE Books SET {set_clause} WHERE book_id = %s"
+        cursor.execute(query, tuple(updated_fields.values()) + (book_id))
+
+        conn.commit()
+        return jsonify({'message': f'Book with ID {book_id} updated successfully'})
+
+    except mysql.connector.Error as err:
+        return jsonify({'error': 'Database error', 'message': str(err)})
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn and conn.is_connected():
+            conn.close()
+
+
+@app.route('/books/<int:book_id>', methods=['DELETE'])
+def delete_profile(book_id):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("SELECT * FROM Books WHERE book_id = %s", (book_id))
+
+        conn.commit()
+        return jsonify({'message': f'Book with ID {book_id} deleted successfully'})
+
+    except mysql.connector.Error as err:
+        return jsonify({'error': 'Database error', 'message': str(err)})
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn and conn.is_connected():
+            conn.close()
 
 if __name__ == '__main__':
     app.run(debug=True)
