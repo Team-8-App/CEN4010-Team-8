@@ -5,11 +5,10 @@ app = Flask(__name__)
 
 # Database configuration
 db_config = {
-    'host': 'ls-b2f10f0f8d1f46949bc16b2a5608934e887eb6b0.c1zf3hrzxwhy.us-east-2.rds.amazonaws.com',
+    'host': 'HOST_8',
     'user': 'team_8',
-    'password': 'Ankit-Bonnie-082821!',
-    'database': 'team_8',
-    'raise_on_warnings': True
+    'password': 'PASSWORD_8',
+    'database': 'team_8'
 }
 
 

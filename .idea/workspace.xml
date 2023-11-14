@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b22cdea-a22e-48cd-a344-658e6a9c35ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CEN4010-Team-8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CEN4010-Team-8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/book_rating_and_commenting/BookRatings_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_rating_and_commenting/BookRatings_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/book_rating_and_commenting/rating_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/book_rating_and_commenting/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_rating_and_commenting/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
       <recent name="C:\Users\Jayle\OneDrive\Documents\GitHub\CEN4010-Team-8\services\book_rating_and_commenting" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Python.BookRatings_api">
     <configuration name="BookRatings_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CEN4010-Team-8" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,8 +190,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tests" />
         <item itemvalue="Python.BookRatings_api" />
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python.profile_management_api" />
         <item itemvalue="Python.wishlist_api" />
         <item itemvalue="Python.ratingapi (1)" />
