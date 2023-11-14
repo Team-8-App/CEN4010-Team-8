@@ -1,2 +1,2 @@
-django==4.2.5
 flask==3.0.0
+mysql-connector-python~=8.1.0
