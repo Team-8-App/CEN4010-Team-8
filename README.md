@@ -11,8 +11,8 @@ AWS Connector for Github
 # Languages and Frameworks
 - Languages: Python
 - Database: MySQL
-- Frameworks: Flask, Django, and Docker
-- Other Apps: AWS Lightsail and AWS Lambda
+- Frameworks: Flask and Docker
+- Other Apps: AWS Lightsail
 
 # Installations and Setup
 Install Docker, AWS Command Line Interface (CLI), and the Lightsail control plugin.
