@@ -32,8 +32,6 @@ or got to Command Line - All Installers: https://docs.aws.amazon.com/cli/latest/
 ```console
 docker build -t flask-container .
 ```
-- Then test your container by using the following command:
-```console
 
 
 
